@@ -2,7 +2,7 @@
 layout: post
 title:  "EHQ Mobile in a month"
 date:   2014-03-27 16:35:54
-categories: jekyll update
+categories: experiments
 ---
 <p>One of the major pain points we had in EHQ Admin was the navigation. Adding/editing a tool or a widget was a pain. As more and more features were built into the app, it just became harder to get to certain common tasks.</p>
 

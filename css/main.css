@@ -420,3 +420,27 @@ a:visited { color: #2a7ae2; }
 .caption {clear: left; margin: 10px 0; padding: 10px 0; font-size: 0.9em;}
 img{border: 10px solid #fff; box-shadow: 0px 1px 3px #ccc}
 .site-header{background: #323636;}
+
+.posts li{position: relative; left: 50px;}
+.posts li:before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -50px;
+  width: 39px;
+  height: 39px;
+  background: #f39c12;
+  border-radius: 600px;
+}
+
+.posts li:nth-child(0):before{background: #e74c3c;}
+.posts li:nth-child(1):before{background: #c0392b;}
+.posts li:nth-child(2):before{background: #f1c40f;}
+.posts li:nth-child(3):before{background: #27ae60;}
+.posts li:nth-child(4):before{background: #3498db;}
+.posts li:nth-child(5):before{background: #9b59b6;}
+.posts li:nth-child(6):before{background: #34495e;}
+.posts li:nth-child(7):before{background: #2980b9;}
+.posts li:nth-child(8):before{background: #d35400;}
+
+
