@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Reset. Chapter 1"
+title:  "Reset. Chapter 1 again"
 date:   2009-12-09 00:00:51
 categories: experiments
+excerpt: <p class="postdesc">Feels good hitting the reset button again. Clean slate. Hello Jekyll. Hello Github!</p>
 ---
 <p>This blog's been reset.</p>
 <p>Feels good hitting the reset button again. Clean slate. Hello Jekyll. Hello Github! Here's a pic to cover the emptiness of the page. Clicked by <a href="https://www.facebook.com/pages/Memory-lane/281426831999283" title="">Rimi</a> at Amber Fort, Jaipur.</p>

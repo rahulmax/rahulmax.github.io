@@ -1,9 +1,13 @@
 ---
+
 layout: post
 title:  "Likert and Matrix Survey Questions"
-date:   2010-06-09 16:35:54
+date:   2014-06-09 16:35:54
 categories: experiments
+excerpt: <p class="postdesc">A Likert scale is a bipolar scaling method, measuring either a positive or negative response to a statement. Often five ordered response leverls are used, but some researchers use seven and even nine levels—it's been found that using seven or nine levels produce higher mean scores.</p>
+
 ---
+
 <h2>Background</h2>
 <p>A likert scale question, named after its inventor Rensis Likert is basically a <strong>rating scale</strong> (although there are quite a lot of differences)</p>
 

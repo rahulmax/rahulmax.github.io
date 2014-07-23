@@ -1,8 +1,11 @@
 ---
+
 layout: post
 title:  "Simple Steps to build Accessible Websites"
 date:   2013-04-30 16:35:54
 categories: experiments
+excerpt: <p class="postdesc">"Accessible Design” means design that includes the needs of people whose physical, mental, or environmental conditions limit their performance. Building an accessible website is important for people who do not have any of these physical or mental characteristics too, as it increases speed, decreases errors and reduces the learning curve for all users.</p>
+
 ---
 
 Accessible Design” means design that includes the needs of people whose physical, mental, or environmental conditions limit their performance. Building an accessible website is important for people who do not have any of these physical or mental characteristics too, as it increases speed, decreases errors and reduces the learning curve for all users. Here you can read everything you would need to build an accessible website, in a simplified format.
