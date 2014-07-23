@@ -4,5 +4,6 @@ title:  "Reset. Chapter 1"
 date:   2009-12-09 00:00:51
 categories: experiments
 ---
-<h1>Feels good hitting the reset button again. Hello Jekyll. Hello Github!</h1>
-<p></p>
+<p>This blog's been reset.</p>
+<p>Feels good hitting the reset button again. Clean slate. Hello Jekyll. Hello Github! Here's a pic to cover the emptiness of the page. Clicked by <a href="https://www.facebook.com/pages/Memory-lane/281426831999283" title="">Rimi</a> at Amber Fort, Jaipur.</p>
+<img src="/images/IMG_3211.jpg" alt="Amber Fort, Jaipur" style="width:97%">

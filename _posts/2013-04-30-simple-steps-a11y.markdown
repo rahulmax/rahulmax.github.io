@@ -5,199 +5,134 @@ date:   2013-04-30 16:35:54
 categories: experiments
 ---
 
+Accessible Design” means design that includes the needs of people whose physical, mental, or environmental conditions limit their performance. Building an accessible website is important for people who do not have any of these physical or mental characteristics too, as it increases speed, decreases errors and reduces the learning curve for all users. Here you can read everything you would need to build an accessible website, in a simplified format.
 
----
+## Principles
 
-### General Guidelines
+These four principles are the foundation of web accessibility. Without any one of these principles access will be limited for some people.
 
-##### Be consistent.
-##### Styleguides are helpful if and only if they are used properly. Remove every styleguide which doesn’t effectively help you to get a better understanding of the code or achieve a well-structured code.
+* ### Perceivable
+Information and user interface components must be presentable to users in ways they can perceive.
 
-+ Take a few minutes to look at the code around you and determine its style.
+* ### Operable
+User interface components and navigation must be operable.
 
-+ The point of having style guidelines is to have a common vocabulary of coding so people can concentrate on what you’re saying rather than on how you’re saying it.
+* ###  Understandable
+Information and the operation of user interface must be understandable.
 
-+ Explain code as needed, where possible.
-
-+ Use comments to explain code: What does it cover, what purpose does it serve, why is respective solution used or preferred.
-+ Use 2 white spaces for indentation. No tabs.
-+ All code in the code-base should look like a single person typed it, even when many people are contributing to it.
-
----
-
-### HTML5 (HTML syntax) is preferred for all HTML documents: `<!DOCTYPE html>`
-
-It’s recommended to use HTML, as text/html. Do not use XHTML. XHTML, as application/xhtml+xml, lacks both browser and infrastructure support and offers less room for optimisation than HTML.
-
-No need to close void elements, i.e. write `<br>`, not `<br />` [Refer w3.org](http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag)
-
-### Use valid HTML code always
-
-+ Use W3C HTML validator to test. Using valid HTML is a measurable baseline quality attribute that contributes to learning about technical requirements and constraints, and that ensures proper HTML usage.
-
-+ Use elements for what they have been created for, keeping semantics in mind. Using HTML according to its purpose is important for accessibility, reuse, and code efficiency reasons.
-
-### Provide alternative contents for multimedia
-
-+ For multimedia, such as images, videos, animated objects via canvas, make sure to offer alternative access. For images that means use of meaningful alternative text `alt` and for video and audio transcripts and captions, if available.
-
-```
-    <!-- Nope -->
-    <img src="homepageui.png">
-
-    <!-- Yes -->
-    <img src="spreadsheet.png" alt="Homepage design screenshot.”>
-```
-
-### Separate structure from presentation from behavior.
-
-+ Strictly keep structure (markup), presentation (style), and behavior (script) apart, and try to keep the interaction between the three to an absolute minimum.
-
-+ Make sure documents and templates contain only HTML and HTML that is solely serving structural purposes.
-
-+ Move everything presentational into style sheets, and everything behavioural into scripts.
-+ Keep the contact area as small as possible by linking as few style sheets and scripts as possible from documents and templates.
-++ Separating structure from presentation from behavior is important for maintenance reasons. It is always more expensive to change HTML documents and templates than it is to update style sheets and scripts.
-
-```
-<!-- Nope -->
-<!DOCTYPE html>
-<title>HTML sucks</title>
-<link rel="stylesheet" href="base.css" media="screen">
-<link rel="stylesheet" href="grid.css" media="screen">
-<link rel="stylesheet" href="print.css" media="print">
-<h1 style="font-size: 1em;">HTML sucks</h1>
-<p>I’ve read about this on a few sites but now I’m sure:
-  <u>HTML is stupid!!1</u>
-<center>I can’t believe there’s no way to control the styling of
-  my website without doing everything all over again!</center>
-
-<!-- YES! -->
-<!DOCTYPE html>
-<title>My first CSS-only redesign</title>
-<link rel="stylesheet" href="default.css">
-<h1>My first whatever site</h1>
-<p>I’ve read about this on a few sites but today I’m actually
-  doing it: separating concerns and avoiding anything in the HTML of
-  my website that is presentational.
-<p>It’s awesome!
-
-```
+* ### Robust
+Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
 
 
-### Do not use entity references.
+### Text Alternatives
 
-+ There is no need to use entity references like `&mdash;`, `&rdquo;`, or `&#x263a;`, assuming the same encoding (UTF-8) is used for files and editors as well as among teams.
+Provide text alternatives for any non-text content so that it can be changed into other forms people need.
 
-+ The only exceptions apply to characters with special meaning in HTML (like < and &) as well as control or “invisible” characters (like no-break spaces).
+### Time-based Media
 
-```
-<!-- Nope -->
-The currency symbol for the Euro is &ldquo;&eur;&rdquo;.
+Provide alternatives for time-based media. (Pre-recorded)
 
-<!-- YES! -->
-The currency symbol for the Euro is “€”.
+  * Provide captions
+  * Provide audio transcript
 
-```
+### Adaptable
+
+Create content that can be presented in different ways (for example simpler layout) without losing information or structure.
+
+* Write semantic HTML and make sure the three layers viz markup, styling, scripting are separate
+
+### Distinguishable
+
+Make it easier for users to see and hear content including separating foreground from background.
+
+* Make sure your content vs. background has a contrast ratio of *atleast 4.5:1*
+* Make sure the text can be resized upto double its original value (without loss of content/functionality) without assistive technology.
+* If any audio on a Web page plays automatically for more than 3 seconds, user should be able to control the volume and should be able to play/pause
+
+### Keyboard Accessible
+
+Make all functionality available from a keyboard.
+
+* All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes
+
+### Enough Time
+
+Provide users enough time to read and use content.
+
+* Putting it simple: Avoid moving, blinking, scrolling or auto-updating information. If doing so, [refer](http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits.html)
+
+### Seizures
+
+Do not design content in a way that is known to cause seizures
+
+* Web pages should not contain anything that flashes more than three times in any one second period
+
+### Navigable
+
+ Provide ways to help users navigate, find content, and determine where they are.
+
+* Provide skip-to-content links to bypass blocks of content that are repeated on multiple pages.
+Web pages should have titles that describe topic or purpose
+* Give  focus to content in an order that preserves meaning and operability.
+* The purpose of each link should be determined from the link text alone or from the link text together with its programmatically determined link context
+* More than one way should be available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.
+* Headings and Labels: Headings and labels should describe topic or purpose.
+* Focus should be visible: Any keyboard operable user interface should have a mode of operation where the keyboard focus indicator is visible.
+
+### Readable
+
+Make text content readable and understandable.
+
+* The Default language of each Web page should be able to be programmatically determined.
+
+### Predictable
+
+Make Web pages appear and operate in predictable ways.
+
+* When any component receives focus, it should not initiate a change of context.
+* Use consistent navigation
+* Components that have the same functionality within a set of Web pages should be identified consistently.
+
+### Input Assistance
+Help users avoid and correct mistakes
+
+* Labels or instructions should be provided when content requires user input.
+* If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text. (Form validations)
+* If an input error is automatically detected and suggestions for correction are known, then the suggestions should be provided to the user.
+* Make sure that data entered by the user is checked for input errors and the user is provided an opportunity to correct them.
+* A mechanism should be available for reviewing, confirming, and correcting information before finalising the submission.
+
+### Compatible
+
+Maximize compatibility with current and future user agents, including assistive technologies.
+
+* Make sure:
+    + Elements have complete start and end tags
+    + elements are nested according to their specifications
+    + elements do not contain duplicate attributes
+    + Any IDs are unique
+* For all user interface components (eg:form elements, links and components generated by scripts) the name and role should be able to be determined programmatically.
 
 
-### Omit the protocol portion (http, https etc.) from embedded resources.
+## Conformance (Level AA)
 
-+ Omit the protocol portion (http:, https:) from URLs pointing to images and other media files, style sheets, and scripts unless the respective files are not available over both protocols.
+* Level AA: For Level AA conformance, the Web page satisfies all the Level A and Level AA Success Criteria, or a Level AA conforming alternate version is provided.
 
-+ Omitting the protocol—which makes the URL relative—prevents mixed content issues and results in minor file size savings.
+* Conformance (and conformance level) is for full Web page(s) only, and cannot be achieved if part of a Web page is excluded.
 
-```
-<!-- Nope -->
-<script src="http://www.google.com/js/gweb/analytics/autotrack.js"></script>
+* Conformance is not possible at a particular level if any page in the process does not conform at that level or better.
 
-<!-- Yes -->
-<script src="//www.google.com/js/gweb/analytics/autotrack.js"></script>
+* Only accessibility-supported ways of using technologies are relied upon to satisfy the success criteria.
 
-/* Nope */
-.example {
-  background: url(http://www.google.com/images/example);
-}
+* If technologies are used in a way that is not accessibility supported, or if they are used in a non-conforming way, then they do not block the ability of users to access the rest of the page.
 
-/* YES! */
-.example {
-  background: url(//www.google.com/images/example);
-}
+* In addition, the following success criteria apply to all content on the page, including content that is not otherwise relied upon to meet conformance, because failure to meet them could interfere with any use of the page:
 
-```
-### Omit type attributes for style sheets and scripts.
+    + Audio Control
+    + No Keyboard Trap
+    + Three Flashes or Below Threshold
+    + Pause, Stop, Hide
 
-No need to use type attributes for style sheets (unless not using CSS) and scripts (unless not using JavaScript).
+##### Note: These are just simplified and general guidelines to be kept in mind while building a webpage. Go through W3.org's WCAG20, follow *thorough* procedures and tools for making the site accessible.
 
-Specifying type attributes in these contexts is not necessary as HTML5 implies text/css and text/javascript as defaults. This can be safely done even for older browsers.
-
-```
-<!-- Nope -->
-<link rel="stylesheet" href="//www.google.com/css/maia.css"
-  type="text/css">
-
-<!-- YES! -->
-<link rel="stylesheet" href="//www.google.com/css/maia.css">
-
-<!-- Nope -->
-<script src="//www.google.com/js/gweb/analytics/autotrack.js"
-  type="text/javascript"></script>
-
-<!-- YES! -->
-<script src="//www.google.com/js/gweb/analytics/autotrack.js"></script>
-```
-
-
-### When quoting attributes values, use double quotation marks.
-
-Use double ("") rather than single quotation marks ('') around attribute values.
-
-```
-<!-- Nope -->
-<a class='button button-secondary'>Sign in</a>
-
-<!-- YES! -->
-<a class="button button-secondary">Sign in</a>
-```
-### Comments on closing tags
-
-After every major chunk of HTML, for example, the end of a carousel, or the end of the content `<div>` place a closing-comment, for example:
-```
-<div class=content>
-    ...
-    <div class=carousel>
-    ...
-    </div><!-- /carousel -->
-    ...
-</div><!-- /content —>
-```
-
-### Mark todos and action items with TODO.
-
-+ Highlight todos by using the keyword TODO only, not other common formats like @@.
-+ Append a contact (username or mailing list) in parentheses as with the format TODO(contact).
-+ Append action items after a colon as in TODO: action item.
-
-```
-<!-- TODO(rahulmax): revisit centering -->
-<center>Test</center>
-
-<!-- TODO: remove optional tags -->
-<ul>
-  <li>Apples</li>
-  <li>Oranges</li>
-</ul>
-```
-
----
-
-References:
-
-* [GitHub](https://github.com/styleguide/css)
-* [Google](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)
-* [W3](http://www.w3.org/TR/WCAG20/)
-* [WordPress](http://make.wordpress.org/core/handbook/coding-standards/css/)
-* [ThinkUp](https://github.com/ginatrapani/ThinkUp/wiki/Code-Style-Guide)
-* [Smashing Mag](http://coding.smashingmagazine.com/2008/05/02/improving-code-readability-with-css-styleguides/)
-* [CSS Wizardry](http://csswizardry.com/2012/04/my-html-css-coding-style/)
-* [Idiomatic](https://github.com/necolas/idiomatic-css)
+[Web Content Accessibility Guidelines (WCAG) 2.0](http://www.w3.org/TR/WCAG20/)

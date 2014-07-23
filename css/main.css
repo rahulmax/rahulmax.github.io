@@ -12,7 +12,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 400;
   background-color: #fdfdfd;
   -webkit-font-smoothing: antialiased;
 
@@ -21,10 +21,10 @@ body {
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; font-family: 'Titillium Web', sans-serif;}
 
 
-a         { color: #2a7ae2; text-decoration: none; }
+a         { color: #907269; text-decoration: none; }
 a:hover,
 a:focus   { color: #000; text-decoration: underline; }
-a:visited { color: #2a7ae2; }
+a:visited { color: #907269; }
 
 /* Utility */
 
@@ -85,7 +85,7 @@ a:visited { color: #2a7ae2; }
 
 .site-footer {
   background: #323636;
-  padding: 30px 0;
+  padding: 0 0 20px;
 }
 .site-footer a{color: #fff;}
 .footer-heading {
@@ -236,8 +236,8 @@ a:visited { color: #2a7ae2; }
 
 .post pre,
 .post code {
-  border: 1px solid #d5d5e9;
-  background-color: #eef;
+  border: 1px solid #eee;
+  background-color: #f8f8f8;
   padding: 8px 12px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -425,12 +425,13 @@ img{border: 10px solid #fff; box-shadow: 0px 1px 3px #ccc}
 .posts li:before{
   content: "";
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: -50px;
   width: 39px;
   height: 39px;
   background: #f39c12;
   border-radius: 600px;
+  opacity: 0.8;
 }
 
 .posts li:nth-child(0):before{background: #e74c3c;}
@@ -444,3 +445,4 @@ img{border: 10px solid #fff; box-shadow: 0px 1px 3px #ccc}
 .posts li:nth-child(8):before{background: #d35400;}
 
 
+.page-content{background: url(/images/aboutback.jpg) no-repeat 0 0; }
