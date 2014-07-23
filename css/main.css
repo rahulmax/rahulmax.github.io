@@ -84,10 +84,10 @@ a:visited { color: #2a7ae2; }
 /* Site footer */
 
 .site-footer {
-  border-top: 1px solid #e8e8e8;
+  background: #323636;
   padding: 30px 0;
 }
-
+.site-footer a{color: #fff;}
 .footer-heading {
   font-size: 18px;
   font-weight: 300;
