@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Reset. Chapter 1"
+date:   2009-12-09 00:00:51
+categories: experiments
+---
+<h1>Feels good hitting the reset button again. Hello Jekyll. Hello Github!</h1>
+<p></p>
