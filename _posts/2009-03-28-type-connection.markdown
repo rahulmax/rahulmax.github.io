@@ -12,8 +12,7 @@ excerpt: <p class="postdesc">Type Connection is an online game by Aura Seltzer t
 <img src="/images/typecon.png" alt="TypeConnection Matches">
 
 <blockquote cite="http://www.typeconnection.com/matches.php#refPtCentury">
-   <p>Many successful pairs feature a serif typeface with a sans
-serif typeface. Assign distinct roles—headline, body copy, caption—to each to help readers deduce order
+   <p>Many successful pairs feature a serif typeface with a sans-serif typeface. Assign distinct roles—headline, body copy, caption—to each to help readers deduce order
 of importance.</p>
  </blockquote>
 

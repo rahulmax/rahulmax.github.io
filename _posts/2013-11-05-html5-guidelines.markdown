@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title:  "HTML5 Guidelines"
+title:  "HTML5 Coding Styleguides"
 date:   2013-11-05 16:35:54
 categories: experiments
 excerpt: <p class="postdesc">Be consistent. The point of having style guidelines is to have a common vocabulary of coding so people can concentrate on what you’re saying rather than on how you’re saying it.</p>

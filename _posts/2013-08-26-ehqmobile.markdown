@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "EHQ Mobile Interface"
+title:  "Slick New Interface for EHQ Mobile!"
 date:   2013-08-26 00:00:51
 categories: experiments
 excerpt: <p class="postdesc">Slick new interface for EHQ on Mobile.</p>

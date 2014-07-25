@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title:  "CSS3 and SASS — Best Practices and Guidelines"
+title:  "CSS3 and SASS — Best Practices and Styleguides"
 date:   2013-09-01 16:35:54
 categories: experiments
 excerpt: <p class="postdesc">Use valid CSS where possible. Unless dealing with CSS validator bugs or requiring proprietary syntax, use valid CSS code. Place comments on a new line above their subject</p>

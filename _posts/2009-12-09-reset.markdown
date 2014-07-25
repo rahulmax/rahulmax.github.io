@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Reset. Chapter 1 again"
-date:   2009-12-09 00:00:51
+date:   2009-01-01 00:00:00
 categories: experiments
 excerpt: <p class="postdesc">Feels good hitting the reset button again. Clean slate. Hello Jekyll. Hello Github!</p>
 ---

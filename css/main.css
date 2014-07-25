@@ -446,8 +446,17 @@ img{border: 10px solid #fff; box-shadow: 0px 1px 3px #ccc}
 .posts li:nth-child(5):before{background: #9b59b6;}
 .posts li:nth-child(6):before{background: #34495e;}
 .posts li:nth-child(7):before{background: #2980b9;}
-.posts li:nth-child(8):before{background: #d35400;}
-
+.posts li:nth-child(8):before{background: #42be4e;}
+.posts li:nth-child(9):before{background: #e74c3c;}
+.posts li:nth-child(10):before{background: #c0392b;}
+.posts li:nth-child(11):before{background: #f1c40f;}
+.posts li:nth-child(12):before{background: #27ae60;}
+.posts li:nth-child(13):before{background: #3498db;}
+.posts li:nth-child(14):before{background: #9b59b6;}
+.posts li:nth-child(15):before{background: #34495e;}
+.posts li:nth-child(16):before{background: #2980b9;}
+.posts li:nth-child(17):before{background: #d35400;}
+.posts li:nth-child(18):before{background: #42be4e;}
 
 .page-content{background: url(/images/aboutback.jpg) no-repeat 0 0; }
 p.postdesc{font-weight: 300; font-size: 14px;}
