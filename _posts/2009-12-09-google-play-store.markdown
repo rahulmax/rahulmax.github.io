@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Google Play Store totally ignores accessibility"
-date:   2009-01-01 00:00:00
+date:   2014-05-25 00:00:00
 categories: experiments
 excerpt: <p class="postdesc"></p>
 ---
