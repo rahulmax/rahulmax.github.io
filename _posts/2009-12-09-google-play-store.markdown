@@ -3,7 +3,7 @@ layout: post
 title:  "Google Play Store totally ignores accessibility"
 date:   2014-05-25 00:00:00
 categories: experiments
-excerpt: <p class="postdesc"></p>
+excerpt: <p class="postdesc">Google Play's buttons have white text against the color `#B3C833`, a similar green as the android logo. On hover, it changes to white text against `#C1D739` which makes it worse.</p>
 ---
 
 <img src="/images/googleplay/main.png" alt="" style="">
@@ -42,4 +42,6 @@ Buttons
 
 `#FFF` on `#E45A4E` — FAIL
 
-It's been like this since years now. Hopefully Google Play Store might fix it one day!
+It's been like this for years now. Hopefully Google Play Store might fix it one day!
+
+(Original post at <a href="https://medium.com/@rahulmax/f886045d7953" title="Medium Article">Medium</a>)
