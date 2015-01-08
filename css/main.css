@@ -25,7 +25,7 @@ a         { color: #854749; text-decoration: none; }
 a:visited { color: #854749; }
 a:hover,
 a:focus   { color: #000; text-decoration: underline; }
-a:active { color: #000; text-shadow:1px 1px 1px #fff; }
+a:active { color: #000; text-shadow:1px 1px 1px #000; }
 
 
 
@@ -148,7 +148,7 @@ a:active { color: #000; text-shadow:1px 1px 1px #fff; }
 
 .page-content {
   padding: 30px 0;
-  background-color: #fff;
+  min-height: 77%;
 }
 
 
@@ -458,5 +458,5 @@ img{border: 10px solid #fff; box-shadow: 0px 1px 3px #ccc}
 .posts li:nth-child(17):before{background: #d35400;}
 .posts li:nth-child(18):before{background: #42be4e;}
 
-.page-content{background: url(/images/aboutback.jpg) no-repeat 0 0; }
+.page-content{background: url(/images/aboutback.jpg) no-repeat 0 0; background-size: cover; }
 p.postdesc{font-weight: 300; font-size: 14px;}
