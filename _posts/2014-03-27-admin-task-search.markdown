@@ -37,15 +37,14 @@ We did brainstorming on the idea and came up with tons of features to be incorpo
 
 One of the first prototype paper sketches:
 
-XXX
-
 We proposed a couple of UI options.
 <img src="/images/adminsearch.png" alt="Admin Task Search" style="float:left" />
 <div><p class="caption">UI For Admin Task Search: This one was discarded as it interrupts the user from changing his mind, and since lightboxes are considered to hinder accessibility.</p></div>
 Then, we came up with this:
 <img src="/images/adminsearch1.jpg" alt="Admin Task Search" style="float:left" />
 <div><p class="caption"></p></div>
+This worked great and we started building the tool. Junil wrote the ruby code and Adhil crafted the JavaScript. Some time later, he made a **jQuery plugin** out of the tool and added keyboard shortcuts also! Check out the plugin here — [https://github.com/liberlabs/actionsearch](https://github.com/liberlabs/actionsearch)
 
-Finally keyboard shortcuts and keyboard navigation were built-in. Check out the video to see it in action.
+See it in action in the video below:
 
 <iframe width="800" height="600" src="//www.youtube.com/embed/CTFY1owAHnQ?rel=0" frameborder="0" allowfullscreen></iframe>
