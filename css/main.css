@@ -432,3 +432,8 @@ img{border: 10px solid #fff; box-shadow: 0px 1px 3px #ccc}
     text-align: center;
   }
 }
+
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
