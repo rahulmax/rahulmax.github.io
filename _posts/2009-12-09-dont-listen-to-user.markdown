@@ -4,7 +4,7 @@ title:  "The first rule of research is don’t listen to the user."
 date:   2014-07-20 00:00:51
 categories: misc
 excerpt: <p class="postdesc">
- “The first rule of research is don’t listen to users. Instead, observe their behavior.”</p>
+ “Instead, observe their behavior.”</p>
 ---
 <p>“The first rule of research is don’t listen to users. Instead, observe their behavior.”</p>
 

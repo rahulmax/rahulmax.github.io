@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title:  "Building the Admin Task Search"
+title:  "Prototyping and Building a Task Search Interface"
 date:   2014-03-27 16:35:54
 categories: experiments
 comments: true

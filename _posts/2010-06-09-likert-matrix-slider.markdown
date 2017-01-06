@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title:  "Super-intuitive UI for Likert and Matrix Survey Questions in Insightify"
+title:  "Intuitive UI for Likert and Matrix Survey Questions"
 date:   2014-06-09 16:35:54
 categories: experiments
 excerpt: <p class="postdesc">A Likert scale is a bipolar scaling method, measuring either a positive or negative response to a statement. Often five ordered response leverls are used, but some researchers use seven and even nine levels—it's been found that using seven or nine levels produce higher mean scores.</p>

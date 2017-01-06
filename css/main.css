@@ -18,7 +18,7 @@ body {
 
 }
 
-h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; font-family: 'Titillium Web', sans-serif;}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; font-family: 'Merriweather', sans-serif;}
 
 
 a         { color: #854749; text-decoration: none; }
@@ -27,7 +27,9 @@ a:hover,
 a:focus   { color: #000; text-decoration: underline; }
 a:active { color: #000; text-shadow:1px 1px 1px #000; }
 
-
+p {
+  margin: 20px 0;
+}
 
 /* Utility */
 
@@ -53,22 +55,25 @@ a:active { color: #000; text-shadow:1px 1px 1px #000; }
   background-color: white;
 }
 
-.site-title,
-.site-title:hover,
-.site-title:visited {
-  display: block;
-  color: #fff;
+.site-title{
+  color: #000;
   font-size: 20px;
+  line-height: 60px;
   font-weight: 800;
   letter-spacing: -1px;
   float: left;
-  line-height: 56px;
   position: relative;
   z-index: 1;
   text-decoration: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.site-title span {color:#fd8739; font-size: 14px; font-weight: normal; margin-left: 10px; font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.site-title:hover,
+.site-title:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.site-title span {color:#fd8739; font-size: 18px; font-weight: normal; margin-left: 10px; display: inline-block;}
+.site-title span.sub {color:#fd8739; font-size: 14px; font-weight: normal; margin-left: 10px; display: inline-block}
 
 .site-nav {
   float: right;
@@ -169,7 +174,8 @@ a:active { color: #000; text-shadow:1px 1px 1px #000; }
 
 .posts .post-date {
   display: block;
-  font-size: 15px;
+  font-size: 13px;
+  margin: 10px 0 5px;
   color: #818181;
 }
 
@@ -365,34 +371,18 @@ a:active { color: #000; text-shadow:1px 1px 1px #000; }
 @media screen and (max-width: 600px) {
 
   .wrap { padding: 0 12px; }
+  .site-title .sub{
+      position: relative;
+      top: -30px;
+  }
 
   .site-nav {
-    position: fixed;
     z-index: 10;
     top: 14px; right: 8px;
-    background-color: white;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    border: 1px solid #e8e8e8;
   }
-
-  .site-nav .menu-icon {
-    display: block;
-    font-size: 24px;
-    color: #505050;
-    float: right;
-    width: 36px;
-    text-align: center;
-    line-height: 36px;
-  }
-
-  .site-nav .menu-icon svg { width: 18px; height: 16px; }
-
   .site-nav .trigger {
     clear: both;
     margin-bottom: 5px;
-    display: none;
   }
 
   .site-nav:hover .trigger { display: block; }
@@ -424,39 +414,21 @@ a:active { color: #000; text-shadow:1px 1px 1px #000; }
 img{border: 10px solid #fff; box-shadow: 0px 1px 3px #ccc}
 .site-header{background: #323636;}
 
-.posts li{position: relative; left: 50px;}
-.posts li:before{
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: -50px;
-  width: 39px;
-  height: 39px;
-  background: #f39c12;
-  border-radius: 5px 5px 16px 5px;
-  opacity: 0.8;
-  box-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+.profile-content {
+  margin-right: 250px;
+}
+.profile-img {
+  float: right;
 }
 
-.posts li:nth-child(0):before{background: #e74c3c;}
-.posts li:nth-child(1):before{background: #c0392b;}
-.posts li:nth-child(2):before{background: #f1c40f;}
-.posts li:nth-child(3):before{background: #27ae60;}
-.posts li:nth-child(4):before{background: #3498db;}
-.posts li:nth-child(5):before{background: #9b59b6;}
-.posts li:nth-child(6):before{background: #34495e;}
-.posts li:nth-child(7):before{background: #2980b9;}
-.posts li:nth-child(8):before{background: #42be4e;}
-.posts li:nth-child(9):before{background: #e74c3c;}
-.posts li:nth-child(10):before{background: #c0392b;}
-.posts li:nth-child(11):before{background: #f1c40f;}
-.posts li:nth-child(12):before{background: #27ae60;}
-.posts li:nth-child(13):before{background: #3498db;}
-.posts li:nth-child(14):before{background: #9b59b6;}
-.posts li:nth-child(15):before{background: #34495e;}
-.posts li:nth-child(16):before{background: #2980b9;}
-.posts li:nth-child(17):before{background: #d35400;}
-.posts li:nth-child(18):before{background: #42be4e;}
-
-.page-content{background: url(/images/aboutback.jpg) no-repeat 0 0; background-size: cover; }
-p.postdesc{font-weight: 300; font-size: 14px;}
+@media screen and (max-width: 750px) {
+  .profile-content {margin: 0; clear: both;}
+  .profile-img {float: none;}
+  .profile-img img {
+    display: block;
+    margin: 0 auto;
+  }
+  .post-header h1 {
+    text-align: center;
+  }
+}
