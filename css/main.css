@@ -437,3 +437,6 @@ img, iframe {
   max-width: 100%;
   height: auto;
 }
+a {
+  word-break: break-all;
+}
