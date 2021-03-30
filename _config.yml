@@ -1,9 +1,0 @@
-# Site settings
-title: ""
-description: ""
-baseurl: ""
-twitter_username: rahulmax
-
-# Build settings
-markdown: kramdown
-permalink: pretty
