@@ -7,87 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <style type="text/css">
-        body{
-            background: #fafafa;
-            color: #212328;
-            font-weight: 300;
-            line-height: 1.4;
-            font-size: 1.4rem;
-        }
-        a {color: #fff; border-radius: 20em;}
-        p {margin: 0 0 1.5em 0;}
-        blockquote {
-            margin: 1em auto;
-            padding: 2em;
-            background: #E7EEF2;
-            border-radius: 20px;
-            font-style: italic;
-        }
-
-        a:hover, a:active, a:focus {color: #fff;}
-        section{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 6em 1em;
-        }
-        section.main {
-            background:linear-gradient(135deg, #000000, #3b4446);
-            min-height: 100vh;
-
-        }
-        .wrapper{
-            width:90vw;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: row;
-        }
-
-        .hero-img img {
-            width: 100%;
-        }
-        h1 {
-            margin: 1em 0;
-            font-size: 3em;
-            font-weight: 800;
-            color: #45bbcf;
-        }
-        h2 {
-            margin: 1em 0 0;
-            font-weight: 300;
-        }
-
-        h3 {
-            color: #999;
-            font-size: 2em;
-            margin: 0 0 1rem 0;
-        }
-
-        h5 {
-            color: #00BCD4;
-            font-size: 1em;
-            border-bottom: 1px solid #00BCD4;
-            padding: 1rem 0;
-        }
-        section.portfolio img{
-            max-width: 1200px;
-            width: 90%;
-            margin: 2em auto;
-            display: block;
-        }
-        .wrap {
-            text-align: center;
-        }
-        p.view-button {
-            text-align: center;
-        }
-
-        #portfolio-ila {background: linear-gradient(260deg, #021852, #010c31); color: #fff;}
-        #portfolio-fuzzie {background: #e83d3e; color: #fff;}
-        #portfolio-numberf {background: #e5e6ea; color: #555;}
-        #portfolio-icici {background: #A8262C; color: #fff;}
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
 
     <title>Rahul's portfolio.</title>
   </head>
@@ -110,11 +32,11 @@
         </div>
       </div>
     </nav>
-    <section class="process">
+    <section class="process" style="padding: 1em 0 6em 0;">
      <div class="wrapper container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                <h1 style="text-align: center;">My Design Process</h1>
+                <h1 style="text-align: center; font-size: 2em;">My Design Process</h1>
                 <p>
                     I believe that good design is simple, usable, attractive and more importantly, is invisible at times where it’s not needed. To achieve this, user empathy, a deep understanding of your users, a keen business vision and practical knowledge in usability and aesthetics is required.</p>
                 <blockquote>
@@ -128,8 +50,8 @@
                 </p>
                 <p><img src="images/process.png" style="max-width: 100%; margin-bottom: 3rem; border-radius: 10px;"></p>
 
-                <h5>1. Discovery</h5>
-                <h3>Understanding Business</h3>
+                <h5>1. Discover</h5>
+                <h4>Understanding Business</h4>
                 <p>The first thing I do before starting a project is to study and understand the business and business goals, what the product is trying to achieve. To do that I understand the Target Market as a first step followed by competitor analysis, team workshops and research sessions with internal and external stakeholders.</p>
                 
                 <h4>Stakeholder Interviews</h4>
@@ -144,7 +66,7 @@
                     I select about 5-10 competitors (direct and indirect) gathered from the stakeholder interviews and the user interviews, and identify their features, strengths and weaknesses.
                 </p>
                 <p><img src="images/competitor.png" style="max-width: 100%;  margin-bottom: 3rem;  border-radius: 10px;"></p>
-                <h3>Understanding the user</h3>
+                <h4>Understanding the user</h4>
                 <p>From my research on the business and business goals, I identify the users and the user archetype. It’s easier and intuitive to design for an archetype than a target demographic.</p>
                 <h4>User Interviews</h4> 
                 <p>I conduct user interviews as part of my UX research and it is an easy and cheap way to obtain the needed information. This helps in focusing on the end user and their pain points. By understanding their challenges it is easier to design a product that solve their needs. </p>
@@ -176,12 +98,12 @@
                 <p>Share findings with Stakeholders:</p>
                 <p>When I finalize the problems list, I share it with stakeholders. Explain that this list of problems is not based on subjective ideas or recommendations. </p>
 
-                <h3>Personas</h3>
+                <h4>Personas</h4>
                 <p>Once we collate the different user interviews and study their needs, wants and worries a few archetypes emerge and these fictitious characters are called personas. There can be multiple personas which the business should cater to.</p>
                 <img src="images/persona.png" style="max-width: 100%; margin-bottom: 3rem;">
 
 
-                <h3>User Journey Maps</h3>
+                <h4>User Journey Maps</h4>
 
                 <p>A user journey map is map defining the actions performed and emotions perceived by the user while using the product from start to finish. Mapping the user’s journey helps us identify the user experience of the product design from the beginning to the end. 
                 This map defines the users’ incentive to using the product and the problems solved by the product for the users. </p>
@@ -238,7 +160,7 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH41jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
