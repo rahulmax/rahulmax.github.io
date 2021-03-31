@@ -11,7 +11,16 @@ p {margin: 0 0 1.5em 0;}
 .hero p{
     color: #fafafa;
 }
-
+.btn {
+    border-radius: 100em;
+    padding: 1em 3em;
+    font-weight: bold;
+    background: transparent;
+    color: #fff;
+}
+.btn-dark {
+    color: #000;
+}
 blockquote {
     margin: 1em auto;
     padding: 2em;
@@ -63,6 +72,7 @@ h5 {
     font-size: 1em;
     border-bottom: 1px solid #00BCD4;
     padding: 1rem 0;
+    margin: 0 0 1em 0!important;
 }
 section.portfolio img{
     max-width: 1200px;
@@ -81,3 +91,10 @@ p.view-button {
 #portfolio-fuzzie {background: #e83d3e; color: #fff;}
 #portfolio-numberf {background: #e5e6ea; color: #555;}
 #portfolio-icici {background: #A8262C; color: #fff;}
+#portfolio-rimisen {background: #000; color: #fff;}
+footer{
+    background: #212328;
+    padding: 4em 0;
+    color: #fafafa;
+    font-size: .8em;
+}
