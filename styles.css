@@ -91,10 +91,11 @@ p.view-button {
     text-align: center;
 }
 
+#portfolio-metro {background: linear-gradient(260deg, #C73432, #C73432); color: #fff;}
 #portfolio-ila {background: linear-gradient(260deg, #021852, #010c31); color: #fff;}
 #portfolio-fuzzie {background: #e83d3e; color: #fff;}
 #portfolio-numberf {background: #e5e6ea; color: #555;}
-#portfolio-icici {background: #A8262C; color: #fff;}
+#portfolio-icici {background: #EA893E; color: #fff;}
 #portfolio-rimisen {background: #000; color: #fff;}
 footer{
     background: #212328;
